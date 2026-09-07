@@ -1,7 +1,9 @@
 # 68K_Mac_GameShell
 A small shell of an application that can be repurposed for creating 68K Macintosh sprite-based games.
 
-<img src="Images/FlappyToaster.png" width="512" alt="FlappyToaster screenshot">
+<p align="center">
+  <img src="Images/FlappyToaster.png" width="512" alt="FlappyToaster screenshot">
+</p>
 
 ### A note about the files
 
