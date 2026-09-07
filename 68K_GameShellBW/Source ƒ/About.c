@@ -31,19 +31,19 @@ void doAbout (Boolean doZooms) {
 	GrafPtr		oldPort;
 	
 	// Center and load the dialog.
-	centerDialog(kAboutDialogID);
-	aboutDialog = GetNewDialog (kAboutDialogID, NULL, (WindowPtr)-1);
+	centerDialog (kAboutDialogID);
+	aboutDialog = GetNewDialog (kAboutDialogID, NULL, (WindowPtr) -1);
 	if (!aboutDialog) {
 		fatalError (kErrFailedResourceLoad);
 		return;
 	}
 	
-	ParamText ("\pGameShellC", "\pNemo", "\pv. 1.0", "\p");
+	ParamText ("\p68K GameShell B&W", "\pNemo", "\pv. 1.0", "\p");
 	
 	// Show the dialog, make it the current graphics port.
 	GetPort (&oldPort);
-	ShowWindow ((GrafPtr)aboutDialog);
-	SetPort ((GrafPtr)aboutDialog);
+	ShowWindow ((GrafPtr) aboutDialog);
+	SetPort ((GrafPtr) aboutDialog);
 	
 	drawDefaultButton (aboutDialog, 1);
 	
