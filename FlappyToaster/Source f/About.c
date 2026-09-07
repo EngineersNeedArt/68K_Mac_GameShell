@@ -11,9 +11,7 @@
 
 
 #define kAboutDialogID		100		// resourceID of 'About' DLOG
-
-
-static Rect		mainPICTBounds;
+#define kOkayButtonItem		1
 
 
 // ========================================================  Public Functions
@@ -25,10 +23,10 @@ void doAbout (void) {
 	GrafPtr		oldPort;
 	
 	// Center and load the dialog.
-	centerDialog(kAboutDialogID);
-	aboutDialog = GetNewDialog(kAboutDialogID, NULL, (WindowPtr)-1);
+	centerDialog (kAboutDialogID);
+	aboutDialog = GetNewDialog (kAboutDialogID, NULL, (WindowPtr) -1);
 	if (!aboutDialog) {
-		fatalError(kErrFailedResourceLoad);
+		fatalError (kErrFailedResourceLoad);
 		return;
 	}
 	
@@ -39,9 +37,9 @@ void doAbout (void) {
 	ShowWindow ((GrafPtr) aboutDialog);
 	SetPort ((GrafPtr) aboutDialog);
 	
-	drawDefaultButton (aboutDialog, 1);
+	drawDefaultButton (aboutDialog, kOkayButtonItem);
 	
-	// Loop until the OK button is hit.
+	// Loop until a button is hit.
 	while (itemHit == 0) {
 		ModalDialog (NULL, &itemHit);
 	}
