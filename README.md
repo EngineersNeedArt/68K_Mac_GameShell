@@ -1,6 +1,8 @@
 # 68K_Mac_GameShell
 A small shell of an application that can be repurposed for creating 68K Macintosh sprite-based games.
 
+<img src="Images/FlappyToaster.png" width="512" alt="FlappyToaster screenshot">
+
 ### A note about the files
 
 1) The 68K Macintosh used a <CR> (carriage return) to indicate the end of a line of text. Modern computing (and GitHub) prefer using the <LF> (line feed) character to indicate line breaks. To make the sources more readable in GitHub I have converted line endings to Unix's <LF>. If though you choose to pull down the sources and use them in a 68K project, you will want to covert the lines endings of the files to <CR>.
