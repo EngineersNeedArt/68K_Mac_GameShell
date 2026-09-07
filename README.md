@@ -13,4 +13,4 @@ To clean them back up for GitHub:
 
 `find . -type f \( -name "*.c" -o -name "*.h" \) -exec mac2unix {} +`
 
-2) Two files, the THINK C project file and the resource file, are not plaintext, they have resource forks. These were compressed (zipped) on MacOS before uploading to this repo. You will have to uncompress them on the Mac to restore the resource fork before moving them to a 68K Mac (or emulator).
+2) Other files, the THINK C project files, resource files, paint files, are not plaintext—they have resource forks. These were compressed (zipped) on MacOS before uploading to this repo. You will have to uncompress them on the Mac to restore the resource fork before moving them to a 68K Mac (or emulator).
