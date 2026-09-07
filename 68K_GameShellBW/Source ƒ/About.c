@@ -10,13 +10,8 @@
 #include "Utilities.h"
 
 
-#define kAboutDialogID		100			// resourceID of 'About' DLOG
+#define kAboutDialogID		100			// resource ID of 'About' DLOG
 #define kButtItemOkay		1
-#define textItemVers		2
-#define pictItemMain		4
-
-
-static Rect		mainPICTBounds;
 
 
 void updateMainPict (DialogPtr);
@@ -45,7 +40,7 @@ void doAbout (Boolean doZooms) {
 	ShowWindow ((GrafPtr) aboutDialog);
 	SetPort ((GrafPtr) aboutDialog);
 	
-	drawDefaultButton (aboutDialog, 1);
+	drawDefaultButton (aboutDialog, kButtItemOkay);
 	
 	// Loop until the OK button is hit.
 	while (itemHit == 0) {
